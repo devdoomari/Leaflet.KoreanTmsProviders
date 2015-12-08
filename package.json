@@ -1,0 +1,57 @@
+{
+  "name": "leaflet_korean_tms_providers",
+  "version": "0.0.1",
+  "description": "port of https://github.com/tontita/Leaflet.KoreanTmsProviders to npm",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "$(npm bin)/webpack --config examples/webpack_config/build.js --bail -p",
+    "clean": "rm -r examples/dist",
+    "watch_examples": "$(npm bin)/webpack --watch --config examples/webpack_config/build.js --bail -p",
+    "dev": "$(npm bin)/webpack-dev-server --config examples/webpack_config/config.js --history-api-fallback"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devdoomari/Leaflet.KoreanTmsProviders.git"
+  },
+  "keywords": [
+    "map",
+    "leafletjs",
+    "leaflet",
+    "daum",
+    "naver",
+    "vworld.kr"
+  ],
+  "author": "devdoomari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devdoomari/Leaflet.KoreanTmsProviders/issues"
+  },
+  "homepage": "https://github.com/devdoomari/Leaflet.KoreanTmsProviders#readme",
+  "dependencies": {
+    "leaflet": "^0.7.7",
+    "lodash": "^3.10.1",
+    "proj4": "^2.3.12",
+    "proj4leaflet": "^0.7.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.1.2",
+    "babel-core": "^5.8.29",
+    "babel-loader": "^5.4",
+    "babel-runtime": "^5.8.29",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "html-webpack-plugin": "^1.7.0",
+    "ng-annotate-loader": "0.0.10",
+    "nginject-loader": "^2.0.0",
+    "raw-loader": "^0.5.1",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-leaflet": "^0.9.0",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0",
+    "webpack-hot-middleware": "^2.6.0"
+  }
+}
